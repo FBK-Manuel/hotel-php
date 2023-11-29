@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.coast {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6F1ED;
+    padding: 5px;
+    font-weight: bolder;
+    gap: 250px;
+    height: 11vh;
+    width: 100%;
+    z-index: 5;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #1C1D21;
+    border-radius: 10px;
+}
+
+.logo > img {
+    width: 150px;
+    height: 75px;
+    /* width: 100px; */
+    /* padding-top: 5px; */
+}
+
+.list ul {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.list li {
+    line-height: 40px;
+    margin: 15px;
+    list-style: none;
+}
+
+.list li a {
+    color: #000;
+    display: inline;
+    text-decoration: none;
+}
+
+.list li a:hover, .list li a:active {
+    color: #CBA044;
+    border-bottom: 2px solid #CBA044;
+}
+
+#book {
+    color: #fff;
+    background-color: #CBA044;
+    padding: 10px 25px;
+}
+
+#book:hover {
+    color: #1C1D21;
+    outline: 2px solid #CBA044;
+    border-bottom: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.coast nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+    font-weight: bolder;
+}
+
+.contact i {
+    color: #CBA044;
+    padding: 20px;
+    font-size: 4rem;
+}  
+
+.contact i:hover {
+    color: #980000;
+}
+
+section {
+    display: grid;
+}
+
+h4 {
+    margin-top: -70px;
+    margin-left: 150px;
+    font-size: 35px;
+    color: #1C1D21;
+    letter-spacing: 1.2px;
+}
+
+textarea {
+    margin-top: 20px;
+    border: 2px solid ;
+}
+
+button {
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #CBA044;
+    border: none;
+    font-weight: bolder;
+    margin: 20px 0px;
+    padding: 13px 35px;
+}
+
+button:hover {
+    color: #1C1D21;
+    background-color: transparent;
+    border: 2px solid #CBA044;
+}
+
+button:active {
+    color: #980000;
+    background-color: transparent;
+    border: 2px solid #CBA044;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1C1D21;
+    padding: 40px;
+    gap: 650px;
+}
+
+.hotel-logo > img {
+    width: 200px;
+}
+
+.link {
+    display: flex;
+    margin-top: 12px;
+}
+
+.link a {
+    font-size: 35px;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.link a:hover {
+    color: #CBA044;
+}
+
+@media (max-width: 375px) {
+    body nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        width: 100%;
+        z-index: 5;
+        padding-top: 25px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .toggle-button {
+        display: flex;
+        margin-top: 18px;
+    }
+
+    .list {
+        display: none;
+        width: 100%;
+    }
+
+    .logo > img {
+        width: 70px;
+        margin-top: -70px;
+        margin-left: 10px;
+    }
+
+    .list ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #F6F1ED;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .list li {
+        text-align: center;
+    }
+
+    .list li a {
+        padding: .5rem 1rem;
+    }
+
+    a:hover {
+        color: #CBA044;
+    }
+
+    .list.active {
+        display: flex;
+    }
+
+    .contact i {
+        font-size: 2rem;
+    }
+
+    h4 {
+        margin-left: 100px;
+        margin-top: -50px;
+        font-size: 13px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hotel-logo {
+        display: flex;
+    }
+
+    .hotel-logo > img {
+        width: 70px;
+        height: 40px;
+        margin-left: -20px;
+    }
+    
+    .link {
+        display: flex;
+        margin-right: -30px;
+    }
+    
+    .link a {
+        font-size: 25px;
+        margin: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
